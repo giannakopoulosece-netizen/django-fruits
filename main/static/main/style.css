@@ -1,0 +1,105 @@
+/* Βασικό styling για όλο το σώμα */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Κεντραρισμένο container για όλες τις σελίδες */
+.container {
+    width: 90%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Τίτλοι */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+/* Παράγραφοι */
+p {
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* Κουμπιά */
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #3498db;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Φόρμα στο home */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 8px;
+    width: 80%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+/* Λίστα φρούτων στη σελίδα page */
+ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+li {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+li a {
+    text-decoration: none;
+    color: #2c3e50;
+    transition: 0.2s;
+}
+
+li a:hover {
+    color: #e67e22;
+    font-weight: bold;
+}
+
+/* Κάρτες για page */
+.page-card {
+    padding: 20px;
+    background-color: #ecf0f1;
+    border-radius: 12px;
+}
+
+/* Εικόνες φρούτων στη fruit.html */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 200px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}

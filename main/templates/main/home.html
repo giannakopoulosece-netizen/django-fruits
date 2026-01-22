@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="{% static 'main/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Home σελίδα</h1>
+        <p>Καλώς ήρθες!</p>
+
+        <form method="post">
+            {% csrf_token %}  <!-- ✅ Αυτό προστέθηκε για CSRF -->
+            <label for="name">Βάλε το όνομά σου:</label>
+            <input type="text" id="name" name="name" placeholder="Το όνομά σου">
+            <button type="submit">Στείλε</button>
+        </form>
+
+        {% if user_name %}
+            <p>Χαίρεσαι, {{ user_name }}! 🎉</p>
+        {% endif %}
+    </div>
+</body>
+</html>

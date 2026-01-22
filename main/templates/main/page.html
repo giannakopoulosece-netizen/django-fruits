@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{% static 'main/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="page-card">
+            <h1>{{ title }}</h1>
+            <p>{{ message }}</p>
+
+            <ul>
+                {% for item in items %}
+                    <li>
+                        <a href="{% url 'fruit_detail' item.key %}">{{ item.emoji }} {{ item.name }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+
+            <a href="{% url 'home' %}">
+                <button>⬅ Επιστροφή στο Home</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

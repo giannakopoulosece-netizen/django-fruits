@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{% static 'main/style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>{{ title }}</h1>
+        <img src="{% static image %}" alt="{{ title }}" style="width:200px;">
+        <br>
+        <a href="{% url 'page' %}">
+            <button>⬅ Επιστροφή στη σελίδα φρούτων</button>
+        </a>
+    </div>
+</body>
+</html>
