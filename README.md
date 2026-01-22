@@ -22,7 +22,7 @@ The user enters their name, selects a fruit, and sees the corresponding image.
 
 ## Technologies Used
 
-- Python 3
+- Python 
 - Django
 - HTML5
 - CSS
